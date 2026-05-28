@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="form-card">
+    <h2>Добавить книгу</h2>
+    <form action="/pages/books/add" method="post">
+        <label for="title">Название книги</label>
+        <input id ="title" type="text" name="title" placeholder="Введите название книги" required>
+        <button type="submit" class="button">Добавить</button>
+    </form>
+</section>
+
+{% endblock %}

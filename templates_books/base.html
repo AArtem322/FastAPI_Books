@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BooksManager</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Библиотека</h1>
+            <nav>
+                <a href="/pages/books">Все книги</a>
+                <a href="/pages/books/add">Добавить книгу</a>
+
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
