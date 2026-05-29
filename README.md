@@ -30,11 +30,14 @@ pip install pydantic
 pip install jinja2 
 ```
 При необходимости установить дополнительные библиотеки, которые запрашивает программа.
+
 2. Подставить свои данные в следующую  строчку файла `main.py`:
+
 ```python
 engine = create_engine("your_data")
 ```
 3. Запустить программу через консоль с помощью команды:
+
 ```commandline
 uvicorn main:app --reload
 ```
