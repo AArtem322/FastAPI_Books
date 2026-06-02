@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="form-card">
+    <h2>Добавить книгу</h2>
+    <form action="/pages/books/{{ book.id }}/edit" method="post">
+        <label for="title">Название книги</label>
+        <input id ="title" type="text" name="title" value="{{ book.title }}" required>
+        <label class="checkbox-label">
+            <input type="checkbox" name="is_read" value="true" {% if book.is_read %}checked{% endif %}>Книга прочитана
+        </label>
+        <button type="submit" class="button">Сохранить</button>
+    </form>
+</section>
+
+{% endblock %}
